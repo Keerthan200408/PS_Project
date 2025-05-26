@@ -74,7 +74,8 @@ debug file 2 → Simulink (Load Bus)
 
 2. **NS-3**:  
    - Node0 reads the value, sends it to Node1.
-   - Node1 executes control logic, saves the response in a second debug file.
+   - Node1 executes control logic, saves the response in a second debug file and the executed control logic is sent to Node2
+   - Node2 sends the control logic to a second debug file and sends to the simulink again which changes the load and slack power generated accordingly with the logic received.
 
 3. **NS-3 → Simulink**:  
    Simulink reads the control command from the second file and updates the load bus.
@@ -91,9 +92,9 @@ PS_project files/
 
 ├── ns3 files/
 
-│   ├── final_destination.cc
+│   ├── final_destination.cc(final ns3 file)
 
-│   ├── MITM_morph.cc
+│   ├── MITM_morph.cc(fully not implemented the MITM attack)
 
 ├── Simulink files/
 
@@ -122,7 +123,7 @@ PS_project files/
 
 ## 📚 References
 
-- IEEE papers on cyber-physical testbeds for smart grids.
+- PS_Base paper attached in the repo.
 - NS-3 documentation: https://www.nsnam.org/
 - Simulink and MATLAB Real-Time Communication Blocks
 
