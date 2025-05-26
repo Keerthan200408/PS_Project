@@ -4,9 +4,25 @@ This project demonstrates a **cyber-physical co-simulation** framework where a 3
 
 ## 🧠 Objective
 
-To build a testbed that enables real-time interaction between a simulated power system and a communication network. The goal is to analyze:
-- Effects of network delay, jitter, and packet loss on power system performance.
-- Impact of cyber-attacks and control disruptions on grid stability.
+To implement a demand response scenario in a smart grid environment using a 3-bus power system:
+
+Bus 1: Wind power generator (renewable and fluctuating supply).
+
+Bus 2: Slack bus with oil generator (dispatchable conventional source).
+
+Bus 3: Load bus with varying demand.
+
+This setup was used to:
+
+Simulate real-time control and response to changes in demand and wind generation.
+
+Create a cyber-physical co-simulation where:
+
+Simulink models the physical dynamics and generation/load profiles.
+
+NS-3 simulates communication between nodes (sensor, controller, actuator).
+
+Study the impact of network performance (delay, loss, attack) on control loop stability and overall power system resilience.
 
 ---
 
