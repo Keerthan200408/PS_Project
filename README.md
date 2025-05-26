@@ -17,6 +17,7 @@ This setup was used to:
 Simulate real-time control and response to changes in demand and wind generation, Basically implement a demand response scenario in which based on varying wind power we change the slack bus power generated and also change the load power drawn upto some extent to use the wind power(renewable source) upto its maximum extent and when lower power is generated at the wind bus than required at load bus then we slighlty change the load power drawn upto 10-30% based on the wind power generated.
 
 Summary:
+
 -Wind power is utilized to the maximum possible extent.
 
 -Slack bus generation dynamically adjusts to compensate for wind fluctuations.
@@ -83,13 +84,22 @@ debug file 2 → Simulink (Load Bus)
 ## 📁 File Structure
 
 PS_project files/
+
 ├── PS_Readme_file.txt
+
+├── base paper
+
 ├── ns3 files/
+
 │   ├── final_destination.cc
+
 │   ├── MITM_morph.cc
+
 ├── Simulink files/
+
 │   ├── sendToPipe.m
-├── TestBed_simulation.slx
+
+│   ├── TestBed_simulation.slx
 
 
 ## ✅ Features Implemented
